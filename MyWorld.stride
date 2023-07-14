@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="MyWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="turtle" type-java="turtle" name="turtle" value="new turtle()" value-java=" new turtle()" enable="true"/>
+                <call expression="addObject(turtle,99,190)" expression-java="addObject(turtle, 99, 190)" enable="true"/>
+                <variable type="dolphin" type-java="dolphin" name="dolphin" value="new dolphin()" value-java=" new dolphin()" enable="true"/>
+                <call expression="addObject(dolphin,424,273)" expression-java="addObject(dolphin, 424, 273)" enable="true"/>
+                <call expression="dolphin.setLocation(260,242)" expression-java="dolphin.setLocation(260, 242)" enable="true"/>
+                <call expression="dolphin.setLocation(252,237)" expression-java="dolphin.setLocation(252, 237)" enable="true"/>
+                <call expression="dolphin.setLocation(228,243)" expression-java="dolphin.setLocation(228, 243)" enable="true"/>
+                <call expression="dolphin.setLocation(96,256)" expression-java="dolphin.setLocation(96, 256)" enable="true"/>
+                <call expression="turtle.setLocation(98,127)" expression-java="turtle.setLocation(98, 127)" enable="true"/>
+                <call expression="dolphin.setLocation(101,274)" expression-java="dolphin.setLocation(101, 274)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
